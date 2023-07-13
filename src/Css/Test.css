@@ -1,497 +1,146 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine&family=Poppins:ital,wght@1,500&display=swap');
+.swiper-container {
+    width: 100%;
+    height: 300px;
+    margin: 20px auto;
+}
+
 @font-face {
     font-family: myFont;
     src: url(../Fonts/FoundersGrotesk-Medium.otf);
 }
-@font-face {
-    font-family: fontText;
-    src: url(../Fonts/Domaine-Text-Regular.otf);
-}
-
-/*Navbar Start*/
-#navbar{
-    background: #FFFCF8;
-}
-
-
-#logo{
-    font-size: 24px;
-    font-weight: 300;
-    color: black;
-    margin-bottom: 5px;
-}
-
-header {
-    background: #444;
-    position: fixed;
-    left: 0;
-    width: 100%;
-    transition: all 0.3s linear;
-    -moz-transition: all 0.3s linear;
-    -webkit-transition: all 0.3s linear;
-    z-index: 99999999999;
-}
-.default {
-    top: 0;
-}
-.fixed {
-    top: -80px;
-}
-.nav-item .nav-link{
+.swiper-slide-text{
+    font-family: myFont;
+    font-weight: 400;
     font-size: 16px;
-    font-weight: 550;
-    color: black;
-    letter-spacing: 1px;
-    border-radius: 3px;
-    font-family: myFont;
 }
-/*Navbar End*/
-
-/*Animation Start*/
-.animation-container{
-    margin-top: 80px;
-}
-.animation-container .hero-title-animation{
-    font-family: fontText;
-    font-size: 50px;
-    font-weight: 600;
-}
-.animation-container .wh-video{
-    width: 180px;
-    height: 180px;
-}
-.animation-container .paper{
-    width: 150px;
-    height: 170px;
-}
-/*Animation End*/
-
-/*Package Start*/
-.packages{
-    background: #FFFCF8;
-    padding: 80px;
+.swiper-slide-title{
+    font-family: 'Domine', serif;
+    font-weight: 400;
+    font-size: 32px;
 }
 
-.packages .packages-top{
-    margin-bottom: 42px;
+.swiper-slide-content{
+    font-family: 'Domine', serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
 }
 
-.packages .packages-text > i{
-    font-size: 12px !important;
+.fas{
+    font-size: 20px;
 }
-.packages .packages-text{
-    font-size: 16px !important;
-    font-weight: 500;
-    font-family: myFont;
-}
-
-.packages .packages-bottom{
-    border-bottom: 1px solid #C4C4C4
-}
-
-.packages .packages-top .packages-bottom >h2{
-
-    font-size: 36px;
-    font-weight: 550;
-}
-.packages .packages-top  >h2{
-
-    font-size: 36px;
-    font-weight: 550;
-}
-
-.packages .packages-top .packages-text  >p{
-
-    font-weight: 600;
+.swiper-slide-container {
+font-family: 'Domine', serif;
+text-align: center;
+font-size: 34px;
+background: #fff;
+height:100%;
+max-width: 600px;
+margin:auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
 }
 
-.main-txt >p{
-    margin-top: 30px;
-    font-weight: 600;
-    margin-bottom: 112px;
+.gallery-top {
+    height: 80%;
+    width: 100%;
 }
-/*Package End*/
+.gallery-thumbs {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+.gallery-thumbs .swiper-slide {
+    width: 20%;
+    height: 100%;
+    opacity: 0.4;
+}
+.gallery-thumbs .swiper-slide-active {
+    opacity: 1;
+}
 
-/*Contact Start*/
-
-.contact{
-    background: #EF562E;
+.swiper-wrap{
+    margin-left: 100px;
+}
+.swiper-img{
     padding: 100px;
 }
-
- #icon-cta{
-   height: 76px;
-}
-.contact .contact-icons .icon-end{
-    text-align: end;
-}
-.contact .contact-icons .swiper-slide-text{
-font-size: 36px;
-color: #FFFCF8;
-font-family: fontText;
-font-weight: 500;
-}
-.contact .contact-icons .swiper-package .swiper-slide-arrow{
-    text-decoration: none;
-    color: #fff;
-}
-.contact .contact-icons .swiper-package > i{
-    text-decoration: none;
-    color: #fff;
-    padding-right: 5px;
-    font-size: 20px;
-}
-@media (max-width: 768px) {
-    .contact{
-        padding: 60px;
-    }
-    .contact .contact-icons .icon-end{
-        text-align: center;
-    }
-    .contact .contact-icons .swiper-slide-text{
-        font-size: 20px;
-        color: #FFFCF8;
-        font-family: fontText;
-        font-weight: 500;
-    }
-    #icon-cta{
-        height: 65px;
-     }
-}
-@media (max-width: 460px) {
-
-    .contact .contact-icons .swiper-slide-text{
-        font-size: 28px;
-        color: #FFFCF8;
-        font-family: fontText;
-        font-weight: 500;
-    }
-
-}
-@media (max-width: 400px) {
-
-    .contact .contact-icons .swiper-slide-text{
-        font-size: 24px;
-        color: #FFFCF8;
-        font-family: fontText;
-        font-weight: 500;
-    }
-    #icon-cta{
-        height: 50px;
-     }
-}
-@media (max-width: 330px) {
-
-    .contact .contact-icons .swiper-slide-text{
-        font-size: 18px;
-        color: #FFFCF8;
-        font-family: fontText;
-        font-weight: 500;
-    }
-    #icon-cta{
-        height: 50px;
-     }
-     .contact .contact-icons .swiper-package .swiper-slide-arrow{
-        text-decoration: none;
-        color: #fff;
-        font-size: 8px;
-    }
-    .contact .contact-icons .swiper-package > i{
-        font-size: 10px;
-    }
-}
-/*Contact End*/
-
-/*Footer Start*/
-.myfooter{
-    background: #000;
-    padding: 35px;
-}
-.myfooter .footer-text{
-    text-align: center;
-}
-
-.myfooter .footer-text > a{
-    margin-left: 10px;
-    text-decoration: none;
-    color: #ffff;
-    font-weight: 550;
-    font-family: myFont;
-}
-.myfooter .svg-icon{
-    text-align: end;
-}
-.myfooter #icon-monogram{
-    height: 40px;
-    text-align: end;
-}
-/*Footer End*/
-
-
-/*Slide Image Start*/
-.product .packages-text{
-    font-size: 16px;
-    font-weight: 500;
-    font-family: myFont;
-    margin-bottom: 70px;
-    margin-left: 100px;
-}
-
-.product-container {
-    display: flex;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-  }
-  .product-image{
-    margin-left: 50px;
-    
-  }
-
-  .product-image-text{
-    width: 500px;
-    height: 240px;
-    display: flex;
-  }
-  .product-image-text >p{
-    font-size: 32px; 
-   margin: auto;
-    margin-left: 100px;
-    font-family: fontText;
-    font-weight: 400;
-    padding-right: 100px;
-  }
-  .product-image-1 >img{
-    width: 400px;
+.swiper-wrapper .swiper-slide img{
+    width: 100%;
     height: 400px;
-  }
-  .product-image-1 >h2{
-    padding-top: 20px;
-    font-size: 20px;
-    font-weight: 500;
-    font-family: myFont;
-    margin: 0;
-  }
-
-  .product-image-1 >p{
-    font-weight: 400;
-    font-size: 16px;
-  }
-
-  .product-image img{
-    width: 400px;
-    height: 400px;
-  }
-  .product-image >h2{
-    padding-top: 20px;
-    font-size: 20px;
-    font-weight: 500;
-    font-family: myFont;
-    margin: 0;
-  }
-
-  .product-image >p{
-    font-weight: 400;
-    font-size: 16px;
-  }
-
-  .btn-double{
-    text-align: end;
-  }
-  .pre-btn,
-  .nxt-btn {
-    border: none;
-    width: 45px;
-    height: 45px;
-    top: 0;
-    align-items: center;
-    cursor: pointer;
-    z-index: 8;
-  }
-  
-  .pre-btn {
-    left: 0;
-    transform: rotate(180deg);
-    border-radius: 50px;
-  }
-  
-  .nxt-btn {
-    right: 0;
-    border-radius: 50px;
-  }
-@media (max-width:1100px) {
-    .product-image img{
-        width: 250px;
-        height: 250px;
-      }
-      .product-image-1  img{
-        width: 250px;
-        height: 250px;
-      }
-      .product-image-text{
-        width: 400px;
-        height: 240px;
-        display: flex;
-      }
-      .product-image-text >p{
-        font-size: 24px; 
-      }
 }
 
-@media (max-width:600px) {
-    .product-image img{
-        width: 250px;
-        height: 250px;
-      }
-      .product-image-1  img{
-        width: 250px;
-        height: 250px;  
-      }
-      .product-image-text{
-        width: 400px;
-        height: 240px;
-        display: flex;
-      }
-
-}
-@media (max-width:550px) {
-    .product-image img{
-        width: 200px;
-        height: 200px;
-      }
-      .product-image-1  img{
-        width: 200px;
-        height: 200px;  
-      }
-      .product-image-text{
-        width: 300px;
-        height: 240px;
-        display: flex;
-      }
-      .product-image-text >p{
-        font-size: 14px; 
-      }
-}
-/*Slide Image End*/
-
-/*Banner Start*/
-.banner{
-    padding: 70px;
-}
-.banner .banner-wrap .banner-text >h3{
-    font-family: fontText;
-    font-size: 32px;
-    font-weight: 600;
-}
-@media (max-width: 900px) {
-    .banner .banner-wrap .banner-text >h3{
-        font-family: fontText;
-        font-size: 26px;
-        font-weight: 600;
-    }
-}
-@media (max-width: 768px) {
-    .banner{
-        padding: 0;
-        padding-bottom: 70px;
-    }
-}
-@media (max-width: 600px) {
-    .banner .banner-wrap .banner-text >h3{
-        font-family: fontText;
+@media (max-width: 1400px){
+    .swiper-slide-container{
         font-size: 22px;
-        font-weight: 600;
+    }
+    .swiper-wrapper .swiper-slide img{
+        width: 100%;
+        height: 300px;
     }
 }
-/*Banner End*/
-@media (max-width: 992px) {
-    .packages .packages-top .packages-bottom > h2 {
-     font-size: 32px;
-     font-weight: 550;}
-   }
-@media (max-width: 900px) {
-    .packages .packages-top .packages-bottom > h2 {
-     font-size: 28px;
-     font-weight: 550;
+@media (max-width: 1000px){
+    .swiper-slide-container{
+        font-size: 20px;
     }
-    .product .packages-text{
-        margin-left: 0;
+    .swiper-wrapper .swiper-slide img{
+        width: 100%;
+        height: 300px;
     }
-   }
-@media (max-width: 768px) {
-   .packages{
-    padding: 0;
-   }
-   .packages .packages-top .packages-bottom > h2 {
-    font-size: 28px;
-    font-weight: 550;}
-  }
-  @media (max-width: 500px) {
-    .packages .packages-text{
-        font-size: 10px !important;
+}
+@media (max-width: 900px){
+    .swiper-slide-container{
+        font-size: 14px;
     }
-    .packages .packages-text >i{
-        padding: 0 !important;
+}
+
+@media (max-width: 780px){
+
+    .swiper-slide-title{
+        font-size: 16px;
     }
-    .product .packages-text{
+    .swiper-wrap{
+        margin: 0;
+    }
+    .swiper-img{
+        padding: 0;
+    }
+    .swiper{
+        margin-bottom: 40px;
+    }
+    .swiper-wrapper .swiper-slide img{
+        width: 300px;
+        height: 300px;
+        margin: auto;
+    }
+    .swiper-wrapper .swiper-slide .image-wrap{
+        display: flex;
+    }
+}
+@media (max-width: 618px){
+    .swiper-slide-container{
+        font-size: 12px;
+    }
+
+}
+@media (max-width: 550px){
+    .swiper-slide-container{
         font-size: 10px;
     }
-    .product .packages-text >i{
-        font-size: 12px;
-    }
-  }
-  @media (max-width: 450px) {
-    .packages .packages-top .packages-bottom > h2 {
-        font-size: 28px;
-        font-weight: 550;}
-  }
-
-  @media (max-width: 400px) {
-    .packages .packages-text{
-        font-size: 8px !important;
-    }
-    .packages .packages-text >i{
-        padding: 0 !important;
-    }
-    .product .packages-text{
+}
+@media (max-width: 500px){
+    .swiper-slide-container{
         font-size: 8px;
     }
-    .packages .packages-top .packages-bottom > h2 {
-        font-size: 24px;
-        font-weight: 550;}
-  }
-  @media (max-width: 390px) {
-    .packages .packages-text{
-        font-size: 8px !important;
-    }
-    .packages .packages-text >i{
-        padding: 0 !important;
-    }
-    .packages .packages-top .packages-bottom > h2 {
-        font-size: 16px;
-        font-weight: 700;}
-        .packages .packages-top .packages-bottom > p {
-            font-size: 10px;
-            font-weight: 550;}
-  }
-
-  @media (max-width: 353px) {
-    .packages .packages-text{
-        font-size: 8px !important;
-    }
-    .packages .packages-text >i{
-        padding: 0 !important;
-    }
-    .packages .packages-top .packages-bottom > h2 {
-        font-size: 12px;
-        font-weight: 700;}
-        .packages .packages-top .packages-bottom > p {
-            font-size: 10px;
-            font-weight: 550;}
-  }
-
-  @media (max-width: 768px) {
-    .myfooter .svg-icon {
-        text-align: center;
-      }
-  }
-
+}

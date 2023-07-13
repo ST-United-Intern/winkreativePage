@@ -202,22 +202,6 @@
         </div>
         
 
-    <!--Video End-->
-
-        <!--Banner Start-->
-        <div class="banner">
-            <div class="container">
-                <div class="row banner-wrap">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-8 banner-text">
-                        <h3>We’re a strategic and creative partner for visionaries, inventors, and entrepreneurs</h3>
-                        <div class="swiper-package"> <i id="swiper-icons" class="fa fa-arrow-circle-right"></i>        <a class="swiper-slide-arrow" href="#">View project</a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--Banner End-->
-
         <!--Banner Start-->
         <div class="banner">
             <div class="container">
@@ -445,6 +429,27 @@
     </div>
     <!--Footer End-->
         <script src="./src/JS/JavaScript.js"></script>
+        <script>
+            (function($) {
+
+var ost = 0;
+
+$(window).scroll(function() {
+  var cOst = $(this).scrollTop();
+
+  if(cOst > ost) {
+     $('header').addClass('fixed').removeClass('default');
+  }
+  else {
+     $('header').addClass('default').removeClass('fixed');
+  }
+
+  ost = cOst;
+});
+
+})(jQuery);
+        </script>
+
 </body>
 <script src="./src/JS/Navbar.js"></script>
 <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>

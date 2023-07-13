@@ -175,8 +175,8 @@
           business</h3>
         <div class="col-md-3"></div>
       </div>
-      <div class="form" onsubmit="checkForm(event)">
-        <form action="" method="post" onsubmit="checkForm(event)">
+      <div class="form">
+        <form method="post" onsubmit="checkForm(event)">
           <div class="row">
             <div class="col-md-2"></div>
             <div class="field col-md-8">
@@ -205,7 +205,7 @@
                   <div class="mb-3">
                     <label for="email" class="form-label">EmailAddress<span class="text-danger">*</span></label>
                     <input type="text" class="form-control" id="email" placeholder="EmailAddress"
-                      pattern="/^[^\s@]+@[^\s@]+\.[^\s@]+$/" title="Enter a valid email address" require>
+                      pattern="/^[^\s@]+@[^\s@]+\.[^\s@][/d]+$/" title="Enter a valid email address" require>
                     <div class="invalid-feedback">Please complete this required field.</div>
                   </div>
 
@@ -240,13 +240,15 @@
     <section class="card-work">
       <div class="row d-flex align-items-stretch">
         <div class="col-md-8 col-sm-12 col-xs-12">
-          <img src="https://www.winkreative.com/wp-content/uploads/2022/07/00_2560x1440_Work-Link_v3-2048x1153.png"
-            class="img-fluid" alt="">
-          <h4 class="img-detail-1">KINDRED WORKS — PLACEMAKING</h4>
-          <h3 class="img-detail-2">Turning ideals into homes and spaces</h3>
+          <img src="https://www.winkreative.com/wp-content/uploads/2022/03/koho-1-2048x1152.jpg" class="img-fluid"
+            alt="">
+          <h4 class="img-detail-1">KOHO — FOOD & DRINK</h4>
+          <h3 class="img-detail-2">A taste of luxury for a Pacific icon</h3>
           <div class="view-project d-flex align-items-center">
             <div class="circle circle-1 btn">
-              <i class="fa-solid fa-arrow-right"></i>
+              <a class="project-link project-link-1" href="https://www.winkreative.com/work/koho/">
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
             </div>
             <span style="margin-left: 5px;">View project</span>
           </div>
@@ -260,8 +262,11 @@
                 <div class="col-md-10">
                   <h3 class="right-card-work-text">Talk to us about brand, experience design and communications</h3>
                   <div class="view-project d-flex align-items-center">
-                    <div class="circle circle-2 btn ">
-                      <i class="fa-solid fa-arrow-right"></i>
+                    <div class="circle circle-2 btn">
+                      <a class="project-link project-link-2" style="border: none;"
+                        href="https://www.winkreative.com/work/koho/">
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </a>
                     </div>
                     <span style="margin-left: 5px;">View project</span>
                   </div>
@@ -273,6 +278,7 @@
           </div>
         </div>
       </div>
+      <br><br><br>
     </section>
   </div>
 

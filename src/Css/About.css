@@ -17,6 +17,9 @@ cite {
   display: flex;
   align-items: center;
 }
+.member-quote {
+  font-size: 32px;
+}
 
 @media (max-width: 768px) {
   p.heading {

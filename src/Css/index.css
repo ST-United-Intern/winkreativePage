@@ -77,6 +77,15 @@ header {
     font-family: fontText;
     font-size: 46px !important;
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+.hero-media-3 {
+    transition-delay: 1s
+}
+=======
+>>>>>>> 331743f (SEC animation)
 img {
     border: 0;
     display: block;
@@ -89,10 +98,17 @@ img {
     line-height: 1.203125
 }
 
+<<<<<<< HEAD
 /* .is-loaded .hero-media {
     opacity: 1;
     transform: matrix(1,0,0,1,0,0)
 } */
+=======
+.is-loaded .hero-media {
+    opacity: 1;
+    transform: matrix(1,0,0,1,0,0)
+}
+>>>>>>> 331743f (SEC animation)
 
 img.lazyload.loaded,video {
     opacity: 1;
@@ -100,7 +116,11 @@ img.lazyload.loaded,video {
 }
 @media screen and (max-width: 667px){
 .hero-title {
+<<<<<<< HEAD
     font-size: 20px !important;
+=======
+    font-size: 28px !important;
+>>>>>>> 331743f (SEC animation)
     padding: 0 30px;
     transform: translateY(-50%);
 }
@@ -148,6 +168,7 @@ img.lazyload.loaded,video {
 .hero-media-3 {
     transition-delay: 1s
 }
+>>>>>>> dc0cb8f (SEC animation)
 
 .hero-media-4 {
     transition-delay: 1.5s

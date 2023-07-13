@@ -1,0 +1,29 @@
+cite {
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.heading {
+  font-size: 38px;
+  line-height: 50px;
+}
+
+@media (max-width: 768px) {
+  p.heading {
+    font-size: 28px;
+  }
+
+  cite {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  p.heading {
+    font-size: 18px;
+  }
+
+  cite {
+    font-size: 10px;
+  }
+}

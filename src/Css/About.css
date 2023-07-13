@@ -8,6 +8,16 @@ cite {
   line-height: 50px;
 }
 
+.client-title {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.client-button {
+  display: flex;
+  align-items: center;
+}
+
 @media (max-width: 768px) {
   p.heading {
     font-size: 28px;
@@ -15,6 +25,10 @@ cite {
 
   cite {
     font-size: 18px;
+  }
+
+  .client-title {
+    font-size: 28px;
   }
 }
 
@@ -25,5 +39,17 @@ cite {
 
   cite {
     font-size: 10px;
+  }
+
+  .card-text {
+    font-size: 14px;
+  }
+
+  .client-title {
+    font-size: 20px;
+  }
+
+  .client-icon {
+    display: none !important;
   }
 }

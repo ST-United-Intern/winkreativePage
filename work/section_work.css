@@ -88,3 +88,62 @@ section span {
         font-size: 17px;
     }
   }
+  #navbar{
+    background: #FFFCF8;
+}
+
+
+#logo{
+    font-size: 24px;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 5px;
+}
+
+header {
+    background: #444;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    z-index: 99999999999;
+}
+.default {
+    top: 0;
+}
+.fixed {
+    top: -80px;
+}
+.nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    font-family: myFont;
+}
+
+.myfooter{
+    background: #000;
+    padding: 35px;
+}
+.myfooter .footer-text{
+    text-align: center;
+}
+
+.myfooter .footer-text > a{
+    margin-left: 10px;
+    text-decoration: none;
+    color: #ffff;
+    font-weight: 550;
+    font-family: myFont;
+}
+.myfooter .svg-icon{
+    text-align: end;
+}
+.myfooter #icon-monogram{
+    height: 40px;
+    text-align: end;
+}

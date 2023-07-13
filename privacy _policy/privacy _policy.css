@@ -13,51 +13,25 @@
     margin-top: 6%;
 }
 
-section .careers-h2 {
+section .privacy-h2 {
     font-family: 'Domine', serif;
     margin-top: 30px;
-    font-size: 37px;
+    font-size: 70px;
+    text-align: center;
 }
 
-section .hide-position {
-    color: grey;
-    font-size: 20px;
-
+section .privacy-h3 {
+    font-size: 27px;
 }
 
-section .bold-title {
-    font-size: 30px;
-    font-family: 'Domine', serif;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-}
-
-section .position-title{
-    display: flex;
-    align-items: center;
-    color: grey;
-}
-
-section .image img{
-    width: 100%;
-    height: 100%;
-}
-
-section .talent-p {
-    font-size: 20px;
+section .privacy-p {
+    font-size: 18px;
     font-family: 'Domine', serif;
 }
 
-.show-slow{
-    opacity: 0;
-    transition: opacity 2s ease;
-}
-
-@media (max-width: 1024px) {
-    section .hide-position {
-      display: none;
-    }
+section ul li{
+    font-size: 18px;
+    font-family: 'Domine', serif;
 }
 
 #navbar{

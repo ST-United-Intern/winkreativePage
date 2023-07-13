@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&family=Gayathri:wght@100;400;700&family=M+PLUS+1p:wght@300;400&display=swap");
+
+* {
+  font-family: "Domine", serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 400;
+}
+
+img {
+  margin-bottom: 80px;
+}
+
+.glow-content {
+  border-bottom: 1px solid #c4c4c4;
+  width: 100%;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+.glow-title {
+  font-size: 64px;
+  font-weight: 400;
+}
+
+.glow-text {
+  font-size: 24px;
+  font-weight: 200;
+}
+
+.stay-date,
+.card-date,
+.glow-date {
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.stay-content {
+  height: 300px;
+}
+
+.stay-title {
+  font-size: 48px;
+  font-weight: 300;
+}
+
+.card-content {
+  height: 100%;
+}
+
+.card-text {
+  font-size: 18px;
+}
+
+.newsletter-title {
+  font-size: 30px;
+  font-weight: 700;
+  padding: 80px 0 62px 0;
+}
+
+.bottom-seperate {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #c4c4c4;
+  margin-bottom: 20px;
+}
+
+.circle {
+  width: 35px;
+  height: 35px;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle.circle-2 {
+  color: white;
+  border: 1px solid white;
+}
+
+.right-card-work-layout {
+  background-color: #ef562e;
+  color: white;
+}
+
+.circle-1:hover {
+  color: white;
+  background-color: black;
+}
+
+.circle-2:hover {
+  color: black;
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .right-card-work-layout {
+    margin: 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  h3.card-title,
+  h2.stay-title,
+  h2.glow-title {
+    font-size: 35px;
+  }
+
+  h4.card-text,
+  h3.stay-text,
+  h3.glow-text {
+    font-size: 14px;
+  }
+
+  h5.card-date,
+  h4.stay-date,
+  h4.glow-date {
+    font-size: 12px;
+  }
+
+  h4.img-detail {
+    font-size: 18px;
+  }
+
+  h3.img-detail-2 {
+    font-size: 20px;
+  }
+
+  h3.right-card-work-text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 280px) {
+  h3.card-title,
+  h2.stay-title,
+  h2.glow-title {
+    font-size: 22px;
+  }
+
+  h4.card-text,
+  h3.stay-text,
+  h3.glow-text {
+    font-size: 14px;
+  }
+
+  h5.card-date,
+  h4.stay-date,
+  h4.glow-date {
+    font-size: 10px;
+  }
+
+  label.font-check-label {
+    font-size: 12px;
+  }
+
+  input.btn {
+    font-size: 11px;
+  }
+
+  h4.img-detail {
+    font-size: 10px;
+  }
+
+  h3.img-detail-2 {
+    font-size: 14px;
+  }
+
+  h3.right-card-work-text {
+    font-size: 15px;
+  }
+}

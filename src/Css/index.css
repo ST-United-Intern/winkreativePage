@@ -3,6 +3,12 @@
     font-family: myFont;
     src: url(../Fonts/FoundersGrotesk-Medium.otf);
 }
+@font-face {
+    font-family: fontText;
+    src: url(../Fonts/Domaine-Text-Regular.otf);
+}
+
+/*Navbar Start*/
 #navbar{
     background: #FFFCF8;
 }
@@ -39,7 +45,26 @@ header {
     border-radius: 3px;
     font-family: myFont;
 }
+/*Navbar End*/
 
+/*Animation Start*/
+.animation-container{
+    margin-top: 80px;
+}
+.animation-container .hero-title-animation{
+    font-family: fontText;
+    font-size: 50px;
+    font-weight: 600;
+}
+.animation-container .wh-video{
+    width: 180px;
+    height: 180px;
+}
+.animation-container .paper{
+    width: 150px;
+    height: 170px;
+}
+/*Animation End*/
 
 /*Package Start*/
 .packages{
@@ -65,18 +90,18 @@ header {
 }
 
 .packages .packages-top .packages-bottom >h2{
-    transition: opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 0.3s;
+
     font-size: 36px;
     font-weight: 550;
 }
 .packages .packages-top  >h2{
-    transition: opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 0.3s;
+
     font-size: 36px;
     font-weight: 550;
 }
 
 .packages .packages-top .packages-text  >p{
-    transition: opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 0.3s;
+
     font-weight: 600;
 }
 
@@ -94,13 +119,86 @@ header {
     padding: 100px;
 }
 
-.contact .contact-icons .fa-eye{
-    font-size: 100px;
+ #icon-cta{
+   height: 76px;
 }
-
+.contact .contact-icons .icon-end{
+    text-align: end;
+}
 .contact .contact-icons .swiper-slide-text{
 font-size: 36px;
 color: #FFFCF8;
+font-family: fontText;
+font-weight: 500;
+}
+.contact .contact-icons .swiper-package .swiper-slide-arrow{
+    text-decoration: none;
+    color: #fff;
+}
+.contact .contact-icons .swiper-package > i{
+    text-decoration: none;
+    color: #fff;
+    padding-right: 5px;
+    font-size: 20px;
+}
+@media (max-width: 768px) {
+    .contact{
+        padding: 60px;
+    }
+    .contact .contact-icons .icon-end{
+        text-align: center;
+    }
+    .contact .contact-icons .swiper-slide-text{
+        font-size: 20px;
+        color: #FFFCF8;
+        font-family: fontText;
+        font-weight: 500;
+    }
+    #icon-cta{
+        height: 65px;
+     }
+}
+@media (max-width: 460px) {
+
+    .contact .contact-icons .swiper-slide-text{
+        font-size: 28px;
+        color: #FFFCF8;
+        font-family: fontText;
+        font-weight: 500;
+    }
+
+}
+@media (max-width: 400px) {
+
+    .contact .contact-icons .swiper-slide-text{
+        font-size: 24px;
+        color: #FFFCF8;
+        font-family: fontText;
+        font-weight: 500;
+    }
+    #icon-cta{
+        height: 50px;
+     }
+}
+@media (max-width: 330px) {
+
+    .contact .contact-icons .swiper-slide-text{
+        font-size: 18px;
+        color: #FFFCF8;
+        font-family: fontText;
+        font-weight: 500;
+    }
+    #icon-cta{
+        height: 50px;
+     }
+     .contact .contact-icons .swiper-package .swiper-slide-arrow{
+        text-decoration: none;
+        color: #fff;
+        font-size: 8px;
+    }
+    .contact .contact-icons .swiper-package > i{
+        font-size: 10px;
+    }
 }
 /*Contact End*/
 
@@ -130,7 +228,14 @@ color: #FFFCF8;
 /*Footer End*/
 
 
-
+/*Slide Image Start*/
+.product .packages-text{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: myFont;
+    margin-bottom: 70px;
+    margin-left: 100px;
+}
 
 .product-container {
     display: flex;
@@ -139,21 +244,64 @@ color: #FFFCF8;
   }
   .product-image{
     margin-left: 50px;
+    
   }
-  
+
+  .product-image-text{
+    width: 500px;
+    height: 240px;
+    display: flex;
+  }
+  .product-image-text >p{
+    font-size: 32px; 
+   margin: auto;
+    margin-left: 100px;
+    font-family: fontText;
+    font-weight: 400;
+    padding-right: 100px;
+  }
+  .product-image-1 >img{
+    width: 400px;
+    height: 400px;
+  }
+  .product-image-1 >h2{
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: myFont;
+    margin: 0;
+  }
+
+  .product-image-1 >p{
+    font-weight: 400;
+    font-size: 16px;
+  }
+
   .product-image img{
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
   }
-  .product-image > p{
-    width: 500px;
-    height: 500px;
+  .product-image >h2{
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: myFont;
+    margin: 0;
+  }
+
+  .product-image >p{
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .btn-double{
+    text-align: end;
   }
   .pre-btn,
   .nxt-btn {
     border: none;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     top: 0;
     align-items: center;
     cursor: pointer;
@@ -170,8 +318,113 @@ color: #FFFCF8;
     right: 0;
     border-radius: 50px;
   }
-  
+@media (max-width:1100px) {
+    .product-image img{
+        width: 250px;
+        height: 250px;
+      }
+      .product-image-1  img{
+        width: 250px;
+        height: 250px;
+      }
+      .product-image-text{
+        width: 400px;
+        height: 240px;
+        display: flex;
+      }
+      .product-image-text >p{
+        font-size: 24px; 
+      }
+}
 
+@media (max-width:600px) {
+    .product-image img{
+        width: 250px;
+        height: 250px;
+      }
+      .product-image-1  img{
+        width: 250px;
+        height: 250px;  
+      }
+      .product-image-text{
+        width: 400px;
+        height: 240px;
+        display: flex;
+      }
+
+}
+@media (max-width:550px) {
+    .product-image img{
+        width: 200px;
+        height: 200px;
+      }
+      .product-image-1  img{
+        width: 200px;
+        height: 200px;  
+      }
+      .product-image-text{
+        width: 300px;
+        height: 240px;
+        display: flex;
+      }
+      .product-image-text >p{
+        font-size: 14px; 
+      }
+}
+/*Slide Image End*/
+
+/*Banner Start*/
+.banner{
+    padding: 70px;
+}
+.banner .banner-wrap .banner-text >h3{
+    font-family: fontText;
+    font-size: 32px;
+    font-weight: 600;
+}
+@media (max-width: 900px) {
+    .banner .banner-wrap .banner-text >h3{
+        font-family: fontText;
+        font-size: 26px;
+        font-weight: 600;
+    }
+}
+@media (max-width: 768px) {
+    .banner{
+        padding: 0;
+        padding-bottom: 70px;
+    }
+}
+@media (max-width: 600px) {
+    .banner .banner-wrap .banner-text >h3{
+        font-family: fontText;
+        font-size: 22px;
+        font-weight: 600;
+    }
+}
+/*Banner End*/
+@media (max-width: 992px) {
+    .packages .packages-top .packages-bottom > h2 {
+     font-size: 32px;
+     font-weight: 550;}
+   }
+@media (max-width: 900px) {
+    .packages .packages-top .packages-bottom > h2 {
+     font-size: 28px;
+     font-weight: 550;
+    }
+    .product .packages-text{
+        margin-left: 0;
+    }
+   }
+@media (max-width: 768px) {
+   .packages{
+    padding: 0;
+   }
+   .packages .packages-top .packages-bottom > h2 {
+    font-size: 28px;
+    font-weight: 550;}
+  }
   @media (max-width: 500px) {
     .packages .packages-text{
         font-size: 10px !important;
@@ -179,10 +432,16 @@ color: #FFFCF8;
     .packages .packages-text >i{
         padding: 0 !important;
     }
+    .product .packages-text{
+        font-size: 10px;
+    }
+    .product .packages-text >i{
+        font-size: 12px;
+    }
   }
   @media (max-width: 450px) {
     .packages .packages-top .packages-bottom > h2 {
-        font-size: 30px;
+        font-size: 28px;
         font-weight: 550;}
   }
 
@@ -193,9 +452,26 @@ color: #FFFCF8;
     .packages .packages-text >i{
         padding: 0 !important;
     }
+    .product .packages-text{
+        font-size: 8px;
+    }
     .packages .packages-top .packages-bottom > h2 {
         font-size: 24px;
         font-weight: 550;}
+  }
+  @media (max-width: 390px) {
+    .packages .packages-text{
+        font-size: 8px !important;
+    }
+    .packages .packages-text >i{
+        padding: 0 !important;
+    }
+    .packages .packages-top .packages-bottom > h2 {
+        font-size: 16px;
+        font-weight: 700;}
+        .packages .packages-top .packages-bottom > p {
+            font-size: 10px;
+            font-weight: 550;}
   }
 
   @media (max-width: 353px) {
@@ -207,7 +483,7 @@ color: #FFFCF8;
     }
     .packages .packages-top .packages-bottom > h2 {
         font-size: 12px;
-        font-weight: 550;}
+        font-weight: 700;}
         .packages .packages-top .packages-bottom > p {
             font-size: 10px;
             font-weight: 550;}

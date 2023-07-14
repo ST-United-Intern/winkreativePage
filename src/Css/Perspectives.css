@@ -79,6 +79,11 @@ img {
   align-items: center;
 }
 
+.project-link-1 {
+  color: black;
+}
+
+.project-link-2,
 .circle.circle-2 {
   color: white;
   border: 1px solid white;
@@ -89,11 +94,13 @@ img {
   color: white;
 }
 
+.project-link-1:hover,
 .circle-1:hover {
   color: white;
   background-color: black;
 }
 
+.project-link-2:hover,
 .circle-2:hover {
   color: black;
   background-color: white;

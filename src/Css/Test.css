@@ -106,10 +106,6 @@ margin:auto;
 }
 
 @media (max-width: 780px){
-<<<<<<< HEAD
-
-=======
->>>>>>> 6e3f378 (reponsive)
     .swiper-slide-content{
         font-size: 12px;
     }

@@ -590,7 +590,7 @@ font-weight: 500;
 @media (max-width: 600px) {
     .banner .banner-wrap .banner-text >h3{
         font-family: fontText;
-        font-size: 22px;
+        font-size: 18px;
         font-weight: 600;
     }
 }

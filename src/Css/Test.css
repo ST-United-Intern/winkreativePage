@@ -106,6 +106,7 @@ margin:auto;
 }
 
 @media (max-width: 780px){
+
     .swiper-slide-content{
         font-size: 12px;
     }
@@ -113,7 +114,10 @@ margin:auto;
         font-size: 13px;
     }
     .swiper-wrap{
+        padding-left: 25px !important;
         margin: 0;
+        margin-bottom: 40px;
+        margin-top: 20px !important;
     }
     .swiper-img{
         padding: 0;

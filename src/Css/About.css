@@ -21,6 +21,52 @@ cite {
   font-size: 32px;
 }
 
+/*Navbar Start*/
+#navbar {
+  background: #fffcf8;
+}
+
+#logo {
+  font-size: 24px;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 5px;
+}
+
+header {
+  background: #444;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  z-index: 99999999999;
+}
+.default {
+  top: 0;
+}
+.fixed {
+  top: -80px;
+}
+.nav-item .nav-link {
+  font-size: 16px;
+  font-weight: 550;
+  color: black;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  font-family: myFont;
+}
+/*Navbar End*/
+
+.touch-link {
+  color: white;
+}
+
+.touch-link:hover {
+  color: black;
+}
+
 @media (max-width: 768px) {
   p.heading {
     font-size: 28px;
